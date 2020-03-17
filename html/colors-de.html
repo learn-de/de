@@ -3,18 +3,106 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Learning Arabic</title>
+    <title>Learning German</title>
     <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/styles.css">
-	
 <style>
-body{
-background: url(https://raw.githubusercontent.com/eliechaaya/ar/master/img/sea.png)no-repeat !important;
-background-size: 100% 100%  !important;
-}
-</style> 	
-</head>
 
-<body  class="nbody" background="https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals.gif">
+
+body {
+  background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
+  background-size: 100% 100%  !important;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani1 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani2 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani3 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.ani4 {  
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  padding-top: 10%;
+  
+}
+
+.ani5 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.van {
+    top: 86%;
+    left: 0%;
+}
+.van2 {
+    top: 82%;
+    left: 0%;
+}
+
+.van3 {
+    top: 60%;
+    left: 70%;
+}
+
+.van4 {
+top: 60%;
+left: -30%;
+}
+
+.van5 {
+    top: 50%;
+    left: 30%;
+}
+
+.object {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+</style>		
+	
+	
+	
+</head>
+<body background="" class="nbody" >
     <header class="header">
         <p><a href=""></a><span></span></p>
     </header>
@@ -23,66 +111,76 @@ background-size: 100% 100%  !important;
         <ul class="letters1"></ul>
 	</div>
     <div class="game">       
-        <img class="figure" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png">
+        <img class="figure" src="https://raw.githubusercontent.com/learn-de/de/master/images/animals/colors-de.png">
 
         <ul class="models_caption"></ul>
         <ul class="models"></ul>
         <ul class="letters"></ul>
 
-        <a class="prev" href="animals6-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
-        <a class="next" href="animals6-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
-        <a class="levl" href="animals6-de.html#" ></a>
+        <a class="prev" href="colors-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="colors-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="colors-de.html#" ></a>
     </div>
 
     <div class="warning">
-        <p>Sorry, Your Android App doesn't support<br>audio element.</p>
+        <p>Sorry, your Android App doesn't support<br>audio element.</p>
     </div>
 
     <div class="ad">
-            <a class="ad-close" href="animals6-de.html#"></a>
+            <a class="ad-close" href="colors-de.html#"></a>
     </div>
-
+	
+	
 <script src="https://eliechaaya.github.io/ar/js/interact.min.js"></script>
 <script src="https://eliechaaya.github.io/ar/js/buzz.min.js"></script>
 
-	<div class="container"><img id="disa" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/hand.gif" width="90px" height="90px" class="disaimag" ></div>
-	
-	
-	<script type="text/javascript">
-	window.setTimeout("document.getElementById('disa').style.display='none';", 3000);
-	</script>
 
-	<script type="text/javascript">
-var i= Math.floor(Math.random() * 3);
+<div id="axis" >
+<img class="object van4 ani4" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree1.png" >
+</div>
+<div id="axis" >
+<img class="object van3 ani3" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree2.png" >
+</div>	
+<div id="axis" >
+<img class="object van ani1" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/tree3.png" >
+</div>		
+<div id="axis" >
+<img class="object van2 ani2" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/block.png" >
+</div>		
+	
+<div id="axis" >
+<img class="object van5 ani5" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/clouds.png" >
+</div>	
 
+
+
+<script>
 (function () {
     var games = [
 	
-	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png', color: '#ccecfb',  word: '',        sound: 'sounds/sounds/animals/',caption:'',caption_Ar:'Meereswelt 🐠' ,voice:'sounds/sounds/cries/' },
+	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/animals/colors-de.png', color: '#ccecfb',  word: '',   sound: 'sounds/colors/',caption:'',caption_Ar:'تعلم Lerne Farben 🌈' ,voice:'' },
 	  
-			
-        { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fish'+i+'.gif', color: '#ccecfb',  word: 'der Fisch',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/fish',caption:'der Fisch',caption_Ar:'der Fisch 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/fish'  },
+	  	
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/red.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red',caption:'rot' ,caption_Ar:'rot 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red'},
+	   
+
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/blue.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/colors/color2',caption:'أزرق',caption_Ar:'أزرق ' , voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color2' },
 		
-        
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/dolphin.png', color: '#ccecfb',  word: 'der Delphin',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/dolphin' ,caption:'der Delphin 🔊',caption_Ar:'der Delphin 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/dolphin'  },
+
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/green.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color3',caption:'أخضر',caption_Ar:'أخضر ', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color3' },
+
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/yellow.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color4',caption:'أصفر',caption_Ar:'أصفر ' , voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color4'},
 		
-			
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/orange.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color5',caption:'برتقالي',caption_Ar:'برتقالي ', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color5' },
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/octopus.gif', color: '#ccecfb',  word: 'der Krake',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/octopus' ,caption:'der Krake',caption_Ar:'der Krake 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/octopus'  },
+	
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/purple.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color6',caption:'بنفسجي',caption_Ar:'بنفسجي ' , voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color6'},
 		
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/white.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color7',caption:'أبيض',caption_Ar:'أبيض', voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color7' },
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/crab.png', color: '#ccecfb',  word: 'die Krabbe',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/crab' ,caption:'die Krabbe',caption_Ar:'die Krabbe 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/crab'  },
+		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/black.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color8',caption:'أسود',caption_Ar:'أسود' , voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color8'},
 		
-		
-			
-		{ img: 'https://raw.githubusercontent.com/learn-de/de/master/images/animals/shark.png', color: '#ccecfb',  word: 'der Hai',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/shark' ,caption:'der Hai 🔊',caption_Ar:'der Hai 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/shark'  },
-		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/whale.gif', color: '#ccecfb',  word: 'der Wal',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/whale' ,caption:'der Wal 🔊',caption_Ar:'der Wal 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/whale'  },
-		
-		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/starfish.png', color: '#ccecfb',  word: 'der Seestern',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/starfish' ,caption:'er Seestern 🔊',caption_Ar:'der Seestern 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/starfish'  },
-		
-		{ img:'https://raw.githubusercontent.com/learn-de/de/master/images/animals/jellyfish.png', color: '#ccecfb',  word: 'die Qualle',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/jellyfish' ,caption:'die Qualle',caption_Ar:'die Qualle 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/jellyfish'  }
+          { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/brown.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color9',caption:'بني',caption_Ar:'بني' , voice: 'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color9'}
 		
         
         
@@ -475,7 +573,9 @@ var i= Math.floor(Math.random() * 3);
     setAnimation($html, 'started', false);
 })();
 
-	</script>	
+</script>
 
+	
+	
 </body>
 </html>
