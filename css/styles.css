@@ -1154,8 +1154,8 @@ th {
 	
 	{
 		margin-right: 50px;
-		margin-top: 350px;
-		left: 60%;
+		margin-top: 310px;
+		left: 50%;
 	
 	}
 	
@@ -1174,7 +1174,7 @@ th {
         bottom: 170px;
         width: auto;
         width: 100%;
-		/* visibility: hidden !important;*/
+		/*visibility: hidden !important;*/
     }
     .letters {
         bottom: 50px;
