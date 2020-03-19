@@ -6,12 +6,9 @@
     <title>Learning German</title>
  <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
 <style>
-
-body{
-background: url(https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits-bg.png)no-repeat !important;
-background-size: 100% 100%  !important;
-background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
-
+body {
+  background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
+  background-size: 100% 100%  !important;
 }
 
 
@@ -24,21 +21,74 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .ani1 {  
-  /* This section calls the slideInFromBottom animation we defined above */
   animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani2 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani3 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.ani4 {  
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  padding-top: 10%;
+  
+}
+
+.ani5 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
   padding-top: 10%;
   
 }
 
 .van {
-    top: 83%;
+    top: 72%;
+    left: 0%;
+}
+.van2 {
+    top: 48%;
     left: 0%;
 }
 
-#axis:hover .move-right{
-    transform: translate(0,-220px);
-    -webkit-transform: translate(0,-220px); /** Chrome & Safari **/
+.van3 {
+    top: 60%;
+    left: 70%;
+}
+
+.van4 {
+top: 60%;
+left: -30%;
+}
+
+.van5 {
+    top: 50%;
+    left: 30%;
 }
 
 .object {
@@ -81,7 +131,7 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
 <script src="https://eliechaaya.github.io/ar/js/buzz.min.js"></script>
 
 <div id="axis-" >
-<img class="object van move-right ani1" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/block.png" >
+<img class="object van move-right ani1" src="https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/bg.png" >
 </div>	
 	
 <script>
