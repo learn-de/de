@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Learning German</title>
-    <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/styles.css">
+ <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
 <style>
 
 body{
@@ -88,51 +88,71 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
 (function () {
     var games = [
 	
-	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/fruits2-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',   sound: 'sounds/',caption:'dog 🔊',caption_Ar:'Gem\u00fcse 🍅' ,voice:'' },
+	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/fruits2-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',   sound: 'sounds/',caption:'',caption_Ar:'Gem\u00fcse 🍅' ,voice:'' },
 	  
 	  
-       { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/aubergine.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/eggplant',caption:'باذنجان' ,caption_Ar:'die Aubergine 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/eggplant'},
-
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_110.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/tomato',caption:'بندورة' ,caption_Ar:'die Tomate 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/tomato'},
-
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_111.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lemon',caption:'ليمون' ,caption_Ar:'die Zitrone 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lemon'},
+       { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/aubergine.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/eggplant',caption:'باذنجان  🔊' ,caption_Ar:'die Aubergine 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/eggplant','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market34'},
 	   
-	    { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/lettuce.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lettuce',caption:'ليمون' ,caption_Ar:'der Salat 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lettuce'},
+
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_110.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/tomato',caption:'طماطم (بندورة) 🔊' ,caption_Ar:'die Tomate 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/tomato',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market21'},
+	   
+
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_111.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lemon',caption:'ليمون 🔊' ,caption_Ar:'die Zitrone 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lemon',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market11'},
+	   
+	   
+	    { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/lettuce.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lettuce',caption:'الخس 🔊' ,caption_Ar:'der Salat 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/lettuce',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market30'},
 		
 		
-	 { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/pepper.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/pepper',caption:'فليفلة' ,caption_Ar:'der Paprika 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/pepper'},
+		
+	 { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/food/pepper.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/pepper',caption:'فلفل 🔊' ,caption_Ar:'der Paprika 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/pepper',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market54'},
 
 
 
-	       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_112.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/carrot',caption:'جزر' ,caption_Ar:'die Karotte 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/carrot'},
+	       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_112.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/carrot',caption:'جزر 🔊' ,caption_Ar:'die Karotte 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/carrot',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market24'},
+		   
+		   
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_122.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/corn',caption:'ذرة' ,caption_Ar:'der Mais 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/corn'}	,
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_122.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/corn',caption:'ذرة 🔊' ,caption_Ar:'der Mais 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/corn',
+	   'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/fruits/fruits_s_022'}	,
+	   
 	  
 	  
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_121.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/cucumber',caption:'خيار' ,caption_Ar:'die Gurke 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/cucumber'},
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_121.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/cucumber',caption:'خيار 🔊' ,caption_Ar:'die Gurke 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/cucumber',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market26'},
 	  
 	  
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_114.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/potato',caption:'بطاطا' ,caption_Ar:'die Kartoffel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/potato'},
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_114.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/potato',caption:'بطاطا 🔊' ,caption_Ar:'die Kartoffel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/potato',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market20'},
 
       
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_116.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/mushroom',caption:'فطر' ,caption_Ar:'der Champignon 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/mushroom'},
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_116.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/mushroom',caption:'فطر 🔊' ,caption_Ar:'der Champignon 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/mushroom',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market33'},
 	   
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_117.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/radish',caption:'فجل' ,caption_Ar:'das Radieschen 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/radish'},
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_117.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/radish',caption:'فجل 🔊' ,caption_Ar:'das Radieschen 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/radish',
+	   'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/fruits/fruits_s_017'},
 
        
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_119.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/onion',caption:'بصل' ,caption_Ar:'die Zwiebel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/onion'},	
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_119.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/onion',caption:'بصل 🔊' ,caption_Ar:'die Zwiebel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/onion',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market22'},
+	   
 
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_120.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/garlic',caption:'ثوم' ,caption_Ar:'der Knoblauch 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/garlic'}
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits/item_g_120.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/garlic',caption:'ثوم 🔊' ,caption_Ar:'der Knoblauch 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/garlic',
+	   'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/food/ar/cat_market23'}
 
 
         
         
     ];
-    //var playicon = ' 🔊';
+   var playicon = '';
 
     var $html     = $('html'),
         $link     = $('.header a'),
@@ -151,7 +171,8 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
 
     var index     = 0,
         score     = 0,
-        alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+        //alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+		alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
         click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
@@ -166,7 +187,7 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
     var sounds = {
         win:  new buzz.sound('sounds/win'),
         fail: new buzz.sound('sounds/fail'),
-        //dice: new buzz.sound('sounds/dice'),
+        dice: new buzz.sound('sounds/dice'),
         blup: new buzz.sound('sounds/blup')
     };
 
@@ -178,15 +199,17 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
         img.src = game.img;
     }
     for (var g in games) {
+    	var newcaption = game.caption + '_english';
         var game = games[g];
         sounds[game.caption] = new buzz.sound(game.voice);
+        sounds[game.voice_english] = new buzz.sound(game.voice_english);
 
         var img = new Image();
         img.src = game.img;
     }
 
     for (var s in alphabet) {
-        sounds[alphabet[s]] = new buzz.sound('sounds/kid/' + alphabet[s]);
+        sounds[alphabet[s]] = new buzz.sound('./sounds/kid/' + alphabet[s]);
     }
 
     // Go to previous Game
@@ -259,7 +282,7 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
             gameSound       = sounds[game.sound],
             wordLetters     = game.word.split(''),
             caption         = game.caption,
-            caption_Ar_new  = game.caption_Ar,
+            caption_Ar_new      = game.caption_Ar,
             caption_Ar      = game.caption_Ar.split(''),
             color           = game.color,
             shuffledLetters = shuffleLetters(caption_Ar);
@@ -297,7 +320,7 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
         $li = document.createElement('li');
         $li.className = 'model1';
         if(caption_Ar_new != ''){
-            var text = document.createTextNode(caption_Ar_new);
+            var text = document.createTextNode(caption_Ar_new + playicon);
         }else{
             var text = document.createTextNode(caption_Ar_new);
         }
@@ -311,12 +334,12 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
         $models1.appendChild($li);
         setAnimation($models1, 'bouncing');
         $li = document.createElement('li');
-        $li.className = 'model2';
+        $li.className = 'model1';
         var text1 = document.createTextNode(caption);
 
         $li.appendChild(text1);
         $li.addEventListener('click', function (e) {
-            play();
+            play_english();
             setAnimation($models_caption, 'bouncing');
         });
 
@@ -513,6 +536,12 @@ background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard synt
     }
     function play(){
         sounds[games[index].caption].play();
+    }
+    function play_english(){
+    	console.log(games[index].voice_english);
+    	var newcaption = games[index].caption + '_english';
+    	console.log(sounds[newcaption]);
+        sounds[games[index].voice_english].play();
     }
     // Start Game
 
