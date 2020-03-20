@@ -1,13 +1,10 @@
-<!DOCTYPE html>
 <html lang="ar" dir=rtl>
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Learning German</title>
-    <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/styles.css">
-
-	
+ <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
 <style>
 body {
   background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
@@ -98,37 +95,50 @@ var i= Math.floor(Math.random() * 3);
 (function () {
     var games = [
 	
-	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',        sound: 'sounds/sounds/animals/',caption:'dog 🔊',caption_Ar:'Nutztiere 🐄' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/' },
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',        sound: 'sounds/sounds/animals/',caption:'',caption_Ar:'Nutztiere 🐄' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/' },
+	  
 
-	 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/cow'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'die Kuh',         sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/cow',caption:'die Kuh 🔊',caption_Ar:'die Kuh 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/cow' },
+	 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/cow'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'die Kuh',         sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/cow',caption:'بقرة 🔊',caption_Ar:'die Kuh 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/cow',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/cow'},
+	   
+	   
+	   
 	
-	{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/horse.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Pferd 🔊',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/horse' ,caption:'das Pferd 🔊',caption_Ar:'das Pferd 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/horse'  },
+	{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/horse.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Pferd 🔊',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/horse' ,caption:'حصان 🔊',caption_Ar:'das Pferd 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/horse',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/horse'},
 	
 		
-        { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/donkey'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Esel',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/donkey',caption:'der Esel 🔊',caption_Ar:'der Esel 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/donkey' },
+        { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/donkey'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Esel',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/donkey',caption:'حمار 🔊',caption_Ar:'der Esel 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/donkey',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/donkey'},
 		
 		
-	{img: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7d81771805451.5ca68e4ac7166.gif', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Schaf 🔊',    sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/sheep',caption:'das Schaf 🔊',caption_Ar:'das Schaf 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/sheep' },
+	{img: 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7d81771805451.5ca68e4ac7166.gif', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Schaf 🔊',    sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/sheep',caption:'خروف 🔊',caption_Ar:'das Schaf 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/sheep',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/sheep'},
 	
 		
-	{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/goat2.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Ziege',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/goat' ,caption:'Ziege',caption_Ar:'Ziege 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/goat'  },
+	{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/goat2.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Ziege',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/goat' ,caption:'ماعز 🔊',caption_Ar:'Ziege 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/goat',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/goat'},
 		
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/chicken0.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Huhn', sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/chicken',caption:'das Huhn  🔊',caption_Ar:'das Huhn 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/chicken' },
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/chicken0.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'das Huhn', sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/chicken',caption:'دجاجة  🔊',caption_Ar:'das Huhn 🔊' ,voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/chicken',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/chicken'},
 		
       
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/frog'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Frosch',       sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/frog' ,caption:'der Frosch 🔊',caption_Ar:'der Frosch 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/frog'  },
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/frog'+i+'.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Frosch',       sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/frog' ,caption:'ضفدع 🔊',caption_Ar:'der Frosch 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/frog',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/frog'},
 		
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/rabbit.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Hase',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/rabbit' ,caption:'der Hase 🔊',caption_Ar:'der Hase 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/rabbit'  },
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/rabbit.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'der Hase',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/rabbit' ,caption:'أرنب 🔊',caption_Ar:'der Hase 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/rabbit',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/rabbit'},
 		
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/mole.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Maulwurf',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/mole' ,caption:'Maulwurf 🔊',	caption_Ar:'Maulwurf 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/mole'  }
+		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/mole.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Maulwurf',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/mole' ,caption:'خلد 🔊',	caption_Ar:'Maulwurf 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/mole',
+     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/mole'}
 	
         
         
     ];
-    //var playicon = ' 🔊';
+  var playicon = '';
 
     var $html     = $('html'),
         $link     = $('.header a'),
@@ -147,7 +157,8 @@ var i= Math.floor(Math.random() * 3);
 
     var index     = 0,
         score     = 0,
-        alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+        //alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+		alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
         click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
@@ -162,7 +173,7 @@ var i= Math.floor(Math.random() * 3);
     var sounds = {
         win:  new buzz.sound('sounds/win'),
         fail: new buzz.sound('sounds/fail'),
-        //dice: new buzz.sound('sounds/dice'),
+        dice: new buzz.sound('sounds/dice'),
         blup: new buzz.sound('sounds/blup')
     };
 
@@ -174,15 +185,17 @@ var i= Math.floor(Math.random() * 3);
         img.src = game.img;
     }
     for (var g in games) {
+    	var newcaption = game.caption + '_english';
         var game = games[g];
         sounds[game.caption] = new buzz.sound(game.voice);
+        sounds[game.voice_english] = new buzz.sound(game.voice_english);
 
         var img = new Image();
         img.src = game.img;
     }
 
     for (var s in alphabet) {
-        sounds[alphabet[s]] = new buzz.sound('sounds/kid/' + alphabet[s]);
+        sounds[alphabet[s]] = new buzz.sound('./sounds/kid/' + alphabet[s]);
     }
 
     // Go to previous Game
@@ -255,7 +268,7 @@ var i= Math.floor(Math.random() * 3);
             gameSound       = sounds[game.sound],
             wordLetters     = game.word.split(''),
             caption         = game.caption,
-            caption_Ar_new  = game.caption_Ar,
+            caption_Ar_new      = game.caption_Ar,
             caption_Ar      = game.caption_Ar.split(''),
             color           = game.color,
             shuffledLetters = shuffleLetters(caption_Ar);
@@ -293,7 +306,7 @@ var i= Math.floor(Math.random() * 3);
         $li = document.createElement('li');
         $li.className = 'model1';
         if(caption_Ar_new != ''){
-            var text = document.createTextNode(caption_Ar_new);
+            var text = document.createTextNode(caption_Ar_new + playicon);
         }else{
             var text = document.createTextNode(caption_Ar_new);
         }
@@ -307,12 +320,12 @@ var i= Math.floor(Math.random() * 3);
         $models1.appendChild($li);
         setAnimation($models1, 'bouncing');
         $li = document.createElement('li');
-        $li.className = 'model2';
+        $li.className = 'model1';
         var text1 = document.createTextNode(caption);
 
         $li.appendChild(text1);
         $li.addEventListener('click', function (e) {
-            play();
+            play_english();
             setAnimation($models_caption, 'bouncing');
         });
 
@@ -510,12 +523,17 @@ var i= Math.floor(Math.random() * 3);
     function play(){
         sounds[games[index].caption].play();
     }
+    function play_english(){
+    	console.log(games[index].voice_english);
+    	var newcaption = games[index].caption + '_english';
+    	console.log(sounds[newcaption]);
+        sounds[games[index].voice_english].play();
+    }
     // Start Game
 
     setGame(index);
     setAnimation($html, 'started', false);
 })();
-
 </script>
 
 </body>
