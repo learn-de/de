@@ -1,18 +1,105 @@
 <html lang="ar" dir=rtl>
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Learning German</title>
  <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
 <style>
-body{
-background: url(https://raw.githubusercontent.com/eliechaaya/ar/master/img/sea.png)no-repeat !important;
-background-size: 100% 100%  !important;
+body {
+  background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
+  background-size: 100% 100%  !important;
 }
-</style> 	
-</head>
 
-<body  class="nbody" background="https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals.gif">
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.ani1 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani2 {  
+  animation: 5s ease-out 0s 1 slideInFromBottom;
+  padding-top: 10%;
+  
+}
+.ani3 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.ani4 {  
+  animation: 5s ease-out 0s 1 slideInFromLeft;
+  padding-top: 10%;
+  
+}
+
+.ani5 {  
+  animation: 5s ease-out 0s 1 slideInFromRight;
+  padding-top: 10%;
+  
+}
+
+.van {
+    top: 73%;
+    left: 0%;
+}
+.van2 {
+    top: 48%;
+    left: 0%;
+}
+
+.van3 {
+    top: 60%;
+    left: 70%;
+}
+
+.van4 {
+top: 60%;
+left: -30%;
+}
+
+.van5 {
+    top: 50%;
+    left: 30%;
+}
+
+.object {
+    position: absolute;
+    transition: all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
+}
+</style>	
+	
+</head>
+<body class="nbody" >
     <header class="header">
         <p><a href=""></a><span></span></p>
     </header>
@@ -21,78 +108,69 @@ background-size: 100% 100%  !important;
         <ul class="letters1"></ul>
 	</div>
     <div class="game">       
-        <img class="figure" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png">
+        <img class="figure" src="https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/kitchen-de.png">
 
         <ul class="models_caption"></ul>
         <ul class="models"></ul>
         <ul class="letters"></ul>
 
-        <a class="prev" href="animals6-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
-        <a class="next" href="animals6-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
-        <a class="levl" href="animals6-de.html#" ></a>
+        <a class="prev" href="school-de.html-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="school-de.html-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="school-de.html-de.html#" ></a>
     </div>
 
     <div class="warning">
-        <p>Sorry, Your Android App doesn't support<br>audio element.</p>
+        <p>Sorry, your Android App doesn't support<br>audio element.</p>
     </div>
 
     <div class="ad">
-            <a class="ad-close" href="animals6-de.html#"></a>
+            <a class="ad-close" href="school-de.html-de.html#"></a>
     </div>
 
 <script src="https://eliechaaya.github.io/ar/js/interact.min.js"></script>
 <script src="https://eliechaaya.github.io/ar/js/buzz.min.js"></script>
 
-	<div class="container"><img id="disa" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/hand.gif" width="90px" height="90px" class="disaimag" ></div>
+<div id="axis-" >
+<img class="object van move-right ani1" src="https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/bg.png" >
+</div>	
 	
-	
-	<script type="text/javascript">
-	window.setTimeout("document.getElementById('disa').style.display='none';", 3000);
-	</script>
-
-	<script type="text/javascript">
-var i= Math.floor(Math.random() * 3);
-
+<script>
 (function () {
     var games = [
 	
-	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/bg-animals-de.png', color: '#ccecfb',  word: '',sound: 'sounds/sounds/animals/',caption:'',caption_Ar:'Meereswelt 🐠' ,voice:'sounds/sounds/cries/' },
+	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/education/school-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',   sound: 'sounds/',caption:'',caption_Ar:'School' ,voice:'' },
+
+ 	  
+{ img: 'https://raw.githubusercontent.com/learn-de/de/master/images/education/school.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen0',caption:' ثلاجة (براد) 🔊' ,caption_Ar:'der Kühlschrank 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen0','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen0'},
+		
 	  
-			
-        { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/fish'+i+'.gif', color: '#ccecfb',  word: 'der Fisch',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/fish',caption:'سمكة 🔊',caption_Ar:'der Fisch 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/fish',
-     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/fish'},
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/cutlery.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen1',caption:'أدوات المائدة 🔊' ,caption_Ar:'das Besteck 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen1','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen1'},
+	   
+
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/pot.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen2',caption:'وعاء 🔊' ,caption_Ar:'der Topf 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen2','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen2'},
+	  
+	  
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/spoon.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen4',caption:'ملعقة 🔊' ,caption_Ar:'der Löffel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen4','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen4'},
+		  
 		
-        
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/dolphin.png', color: '#ccecfb',  word: 'der Delphin',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/dolphin' ,caption:'دلفين 🔊',caption_Ar:'der Delphin 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/dolphin',
-     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/dolphin'},
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/fork.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen5',caption:'شوكة 🔊' ,caption_Ar:'die Gabel 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen5','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen5'},
+		  
 		
-			
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/knife.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen6',caption:'سكين 🔊' ,caption_Ar:'das Messer 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen6','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen6'},
+		  
 		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/octopus.gif', color: '#ccecfb',  word: 'der Krake',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/octopus' ,caption:'أخطبوط 🔊',caption_Ar:'der Krake 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/octopus',
-     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/octopus'},
-		
-		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/crab.png', color: '#ccecfb',  word: 'die Krabbe',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/crab' ,caption:'سلطعون 🔊',caption_Ar:'die Krabbe 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/crab',
-     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/crab'},
-		
-		
-			
-		{ img: 'https://raw.githubusercontent.com/learn-de/de/master/images/animals/shark.png', color: '#ccecfb',  word: 'der Hai',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/shark' ,caption:'قرش 🔊',caption_Ar:'der Hai 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/shark',
-     'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/ar/cat_fishes10'},
-		
-		
-		{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/whale.gif', color: '#ccecfb',  word: 'der Wal',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/whale' ,caption:'حوت 🔊',caption_Ar:'der Wal 🔊',voice:'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/cries/whale',
-     'voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/sounds/animals/whale'},
-		
-		
-		{ img: 'https://raw.githubusercontent.com/learn-de/de/master/images/animals/starfish.png', color: '#ccecfb',  word: 'der Seestern',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/starfish' ,caption:'نجم البحر 🔊',caption_Ar:'der Seestern 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/starfish',
-     'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/ar/cat_fishes19'},
-	 
-		
-		{ img:'https://raw.githubusercontent.com/learn-de/de/master/images/animals/jellyfish.png', color: '#ccecfb',  word: 'die Qualle',   sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/jellyfish' ,caption:'قناديل البحر 🔊',caption_Ar:'die Qualle 🔊',voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/jellyfish',
-     'voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/animals/ar/cat_fishes3'}
-		
-        
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/cup.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen7',caption:'كأس (فنجان) 🔊' ,caption_Ar:'die Tasse 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen7','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen7'},
+		  
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/napkin2.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen8',caption:'منديل 🔊' ,caption_Ar:'die Serviette 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen8','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen8'},	
+
+
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/oven.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen15',caption:'فرن 🔊' ,caption_Ar:'der Ofen 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen15','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen15'},
+ 
+
+ { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/kitchen/microwave.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen16',caption:'مايكرويف 🔊' ,caption_Ar:'die Mikrowelle 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/cat_kitchen16','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/kitchen/ar/cat_kitchen16'}, 
+
+
+      
         
     ];
    var playicon = '';
@@ -114,7 +192,8 @@ var i= Math.floor(Math.random() * 3);
 
     var index     = 0,
         score     = 0,
-        alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
+        //alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+		alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
         click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
@@ -491,7 +570,11 @@ var i= Math.floor(Math.random() * 3);
     setAnimation($html, 'started', false);
 })();
 
-	</script>	
 
+
+</script>
+
+
+	
 </body>
 </html>
