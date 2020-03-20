@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Learning German</title>
-    <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
+ <link rel="stylesheet" href="https://eliechaaya.github.io/ar/css/visible-caption.css">
 <style>
-body {
-  background-image: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
-  background-size: 100% 100%  !important;
+
+body{
+background: url(https://raw.githubusercontent.com/eliechaaya/ar/master/img/fruits-bg.png)no-repeat !important;
+background-size: 100% 100%  !important;
+background-color: linear-gradient(#71e6ff, #ffffff) !important; /* Standard syntax (must be last) */
+
 }
 
 
@@ -21,74 +24,21 @@ body {
   }
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .ani1 {  
+  /* This section calls the slideInFromBottom animation we defined above */
   animation: 5s ease-out 0s 1 slideInFromBottom;
-  padding-top: 10%;
-  
-}
-.ani2 {  
-  animation: 5s ease-out 0s 1 slideInFromBottom;
-  padding-top: 10%;
-  
-}
-.ani3 {  
-  animation: 5s ease-out 0s 1 slideInFromRight;
-  padding-top: 10%;
-  
-}
-
-.ani4 {  
-  animation: 5s ease-out 0s 1 slideInFromLeft;
-  padding-top: 10%;
-  
-}
-
-.ani5 {  
-  animation: 5s ease-out 0s 1 slideInFromRight;
   padding-top: 10%;
   
 }
 
 .van {
-    top: 72%;
-    left: 0%;
-}
-.van2 {
-    top: 48%;
+    top: 83%;
     left: 0%;
 }
 
-.van3 {
-    top: 60%;
-    left: 70%;
-}
-
-.van4 {
-top: 60%;
-left: -30%;
-}
-
-.van5 {
-    top: 50%;
-    left: 30%;
+#axis:hover .move-right{
+    transform: translate(0,-220px);
+    -webkit-transform: translate(0,-220px); /** Chrome & Safari **/
 }
 
 .object {
@@ -108,15 +58,15 @@ left: -30%;
         <ul class="letters1"></ul>
 	</div>
     <div class="game">       
-        <img class="figure" src="https://raw.githubusercontent.com/learn-de/de/master/images/body/body-de.png">
+        <img class="figure" src="https://raw.githubusercontent.com/learn-de/de/master/images/colors/colors-de.png">
 
         <ul class="models_caption"></ul>
         <ul class="models"></ul>
         <ul class="letters"></ul>
 
-        <a class="prev" href="body-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
-        <a class="next" href="body-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
-        <a class="levl" href="body-de.html#" ></a>
+        <a class="prev" href="colors2-de.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
+        <a class="next" href="colors2-de.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="levl" href="colors2-de.html#" ></a>
     </div>
 
     <div class="warning">
@@ -124,48 +74,59 @@ left: -30%;
     </div>
 
     <div class="ad">
-            <a class="ad-close" href="body-de.html#"></a>
+            <a class="ad-close" href="colors2-de.html#"></a>
     </div>
 
 <script src="https://eliechaaya.github.io/ar/js/interact.min.js"></script>
 <script src="https://eliechaaya.github.io/ar/js/buzz.min.js"></script>
 
 <div id="axis-" >
-<img class="object van move-right ani1" src="https://raw.githubusercontent.com/learn-de/de/master/images/body/bg.png" >
+<img class="object van move-right ani1" src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/block.png" >
 </div>	
 	
 <script>
 (function () {
     var games = [
 	
-	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/colors-de.png', color: '#ccecfb',  word: '',   sound: 'sounds/colors/',caption:'',caption_Ar:'Lerne Farben' ,voice:'' },
+	  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/colors-de.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',   sound: 'sounds/',caption:'',caption_Ar:'Lerne Farben' ,voice:'' },
 	  
-	  	
-       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/red.png', color: '#ccecfb',  word: '???? ??',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red',caption:'????' ,caption_Ar:'Rot ??', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red'},
+	  
+	    { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/red.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red',caption:'أحمر 🔊' ,caption_Ar:'Rot 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/red','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color1'},
+		
+	  
+       { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/blue.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Blau',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/blue',caption:'أزرق 🔊',caption_Ar:'Blau 🔊' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/blue','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color2'},
 	   
 
-	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/blue.png', color: '#ccecfb',  word: 'Blau ??',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/blue',caption:'Blau',caption_Ar:'Blau ??' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/blue' },
-		
+	 
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/green.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/green',caption:'أخضر 🔊',caption_Ar:'Gr\u00fcn 🔊' , voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/green','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color3'},
+	  
+	  
 
-	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/green.png', color: '#ccecfb',  word: '???? ??',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/green',caption:'????',caption_Ar:'Gr\u00fcn ??' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/green' },
-
-		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/yellow.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/yellow',caption:'',caption_Ar:'Gelb ??' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/yellow'},
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/yellow.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/yellow',caption:'أصفر 🔊',caption_Ar:'Gelb 🔊' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/yellow','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color4'},
+		  
+		  
 		
-		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/orange.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/orange_color',caption:'',caption_Ar:'Orange ??', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/orange_color' },
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/orange.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/orange_color',caption:'برتقالي 🔊',caption_Ar:'Orange 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/orange_color','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color5'},
 		
 	
-		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/purple.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/violet',caption:'',caption_Ar:'violett ??' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/violet'},
+	  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/purple.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/violet',caption:'بنفسجي 🔊',caption_Ar:'violett 🔊' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/violet','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color6'},
 		  
 		
-		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/white.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/white',caption:'',caption_Ar:'Wei\u00df ??', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/white' },
-		
-		  { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/black.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/black',caption:'',caption_Ar:'Schwarz ' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/black'},
-		
-          { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/brown.png', color: '#ccecfb',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/brown',caption:'braun',caption_Ar:'Braun ' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/brown'},
+	 { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/white.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/white',caption:'أبيض 🔊',caption_Ar:'Wei\u00df 🔊', voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/white','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color7'},
 		  
-		  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/pink.png', color: '#ccecfb',  word: 'Rosa',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/pink',caption:'Rosa',caption_Ar:'Pink ' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/pink'},
 		
-        { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/grey.png', color: '#ccecfb',  word: 'Grau',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/grey',caption:'Grau',caption_Ar:'Grau ' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/grey'}
+	{ img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/black.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: '',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/black',caption:'أسود 🔊',caption_Ar:'Schwarz 🔊' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/black','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color8'},
+		  
+		
+          { img: 'https://raw.githubusercontent.com/eliechaaya/ar/master/img/colors/brown.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'dog',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/brown',caption:'بني 🔊',caption_Ar:'Braun ' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/brown','voice_english':'https://raw.githubusercontent.com/eliechaaya/sounds/master/colors/color9'},
+		  
+		  
+		  { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/pink.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Rosa',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/pink',caption:'زهري 🔊',caption_Ar:'Pink 🔊' , voice:'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/pink','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/pink'},
+		  
+		
+        { img: 'https://raw.githubusercontent.com/learn-de/de/master/images/colors/grey.png', color: 'linear-gradient(#71e6ff, #ffffff)',  word: 'Grau',  sound: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/grey',caption:'رمادي 🔊',caption_Ar:'Grau 🔊' , voice: 'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/grey','voice_english':'https://raw.githubusercontent.com/learn-de/de/master/sounds/colors/grey'}
+
+
         
         
     ];
@@ -188,8 +149,9 @@ left: -30%;
 
     var index     = 0,
         score     = 0,
-        alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
-		click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
+        //alphabet  = 'abcdefghijklmnopqrstuvwxyz'.split(''),
+		alphabet  = 'أإابتةثجحخدذرزسشصضطظعغفقكلمنهوي'.split(''),
+        click     = 'ontouchstart' in $html ? 'touchstart' : 'mousedown';
 
     // Buzz & sounds
 
