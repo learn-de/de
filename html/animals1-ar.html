@@ -41,6 +41,35 @@ background-size: 100% 100%  !important;
     -webkit-transition: all 6s ease-in-out; /** Chrome & Safari **/
 }
 
+
+span{ display: inline-block; margin:1em; } 
+.flip_H{ transform: scale(-1, 1); color:green;
+-webkit-text-stroke: 1px black;
+   color: green;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+
+
+ }
+.flip_V{ transform: scale(1, -1); color:green;
+-webkit-text-stroke: 1px black;
+   color: green;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+ }
+
+<span class='flip_H'>➥</span>
+<span class='flip_V'>➥</span>
+
 </style> 	
 </head>
 
@@ -59,8 +88,8 @@ background-size: 100% 100%  !important;
         <ul class="models"></ul>
         <ul class="letters"></ul>
 
-        <a class="prev" href="animals1-ar.html#"><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px"></a>
-        <a class="next" href="animals1-ar.html#"><img  src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_next_150.png" width="50px" height="50px"></a>
+        <a class="prev" href="animals1-ar.html#"><span class='flip_H'><img   src="https://raw.githubusercontent.com/eliechaaya/ar/master/img/btn_prev_150.png" width="50px" height="50px">➥</span></a>
+        <a class="next" href="animals1-ar.html#"><span class='flip_V'>➥</span></a>
         <a class="levl" href="https://eliechaaya.github.io/ar/animals1-ar.html#" ></a>
     </div>
 
